@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DSA Logic Visualizer</title>
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="DATASA.css">
+  </head>
+  <body>
+    <div class="app-frame">
+      <aside class="sidebar" aria-label="Primary">
+        <div class="brand">
+          <h1 class="brand-title">DSA LOGIC VISUALIZER</h1>
+          <p class="brand-subtitle">Visual solution to all & easy coding questions.</p>
+        </div>
+
+        <nav class="nav" role="navigation" aria-label="Sidebar">
+          <div class="nav-group">
+            <a href="#dashboard-panel" class="nav-item is-active" aria-current="page" data-target="dashboard-panel">Dashboard</a>
+            <p>Select one and press Start.</p>
+
+            <form>
+              <label for="algorithms">Algorithm:</label>
+              <select id="algorithms">
+                <option>Selection sort</option>
+                <option>Binary Insertion sort</option>
+                <option>Quick sort</option>
+                <option>Merge sort</option>
+                <option>In-place merge sort</option>
+                <option>Heap sort</option>
+                <option>Tournament</option>
+                <option>Tree sort</option>
+                <option>Block sort (approx)</option>
+                <option>smooth sort (approx)</option>
+                <option>Tim sort (simplified)</option>
+                <option>Patience sort</option>
+                <option>Intro sort</option>
+              </select>
+
+              <label for="array-size">Array size</label>
+              <input type="range" id="array-size" min="0" max="100" value="50">
+              <label for="speed">Speed</label>
+              <input type="range" id="speed" min="0" max="100" value="50">
+
+              <center>
+                <button id="shuffle" type="button">Shuffle</button>
+                <button id="Start" type="button">Start</button>
+                <button id="Stop" type="button">Stop</button>
+              </center>
+            </form>
+          </div>
+
+          <div class="nav-group">
+            <a href="#about-panel" class="nav-item" data-target="about-panel">About Us</a>
+          </div>
+
+          <div class="nav-group">
+            <a href="#" class="nav-item">Brightness</a>
+          </div>
+
+          <div class="box">
+            <button class="light-box" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+          </div>
+        </nav>
+      </aside>
+
+      <main>
+        <section id="dashboard-panel" class="panel">
+          <h1>Dashboard</h1>
+          <div class="content">
+            <div class="content-viewport" aria-label="Visualization area">
+              <!-- Visualization content goes here -->
+            </div>
+          </div>
+        </section>
+
+        <section id="about-panel" class="panel" hidden aria-label="About Us">
+            <h1>ABOUT US</h1>
+            <p>The members for the Data Structure and Algorithm</p>
+            <svg id="org-links" class="org-links" aria-hidden="true"></svg>
+
+            <div class="container">
+                <div class="PROFILE" id="ceo">
+                <img src="" alt="Marc Buday">
+                <h3>Marc Buday</h3>
+                <p>Leader</p>
+                </div>
+            </div>
+
+            <div class="containers" id="reports">
+                <div class="PROFILE report">
+                    <img src="Zairiel Laab.jpg" alt="Zairiel John Spencer L. Laab">
+                    <h3>Zairiel John Spencer L. Laab</h3>
+                    <p>Member</p>
+                </div>
+                <div class="PROFILE report">
+                    <img src="" alt="JoN Jay-Ahr Orendain">
+                    <h3>JoN Jay-Ahr Orendain</h3>
+                    <p>Member</p>
+                </div>
+                <div class="PROFILE report">
+                    <img src="" alt="John Alexis Rica">
+                    <h3>John Alexis Rica</h3>
+                    <p>Member</p>
+                </div>
+            </div>
+            </section>
+
+      </main>
+    </div>
+    <script src="DATASA.js"></script>
+  </body>
+</html>
